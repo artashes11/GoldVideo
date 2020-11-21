@@ -9,6 +9,7 @@ nav{
    background:none;
    z-index:9999;
    transition: .5s;
+   user-select: none;
 }
 nav ul{
     float: right;
@@ -89,11 +90,11 @@ nav ul li a{
     width: 100%;
     position: relative;
     margin: auto;
-  }
-  .mySlides {
+}
+.mySlides {
     display: none;
-  }
-  .prev, .next {
+}
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -106,15 +107,15 @@ nav ul li a{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  .next {
+}
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  .prev:hover, .next:hover {
+}
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  .text {
+}
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -122,19 +123,15 @@ nav ul li a{
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
+}
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -143,37 +140,29 @@ nav ul li a{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
   
   /* Fading animation */
-  .fade {
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
-  @-webkit-keyframes fade {
+@-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
-/* nav{
-   position: fixed;
-   height: 77.999px;
-   width: 100%;
-   background:none;
-   z-index:9999;
-   transition: .5s;
-} */
+}
 a.logo{
    line-height: 75px;
    margin-left: 80px;
@@ -226,101 +215,10 @@ a.logo{
     transition: width 0.3s;
  }
  .sticky{
-    background: #2F255E;
+    background: #228bcc;
     transition: .5s;
-    box-shadow: rgba(88, 7, 243, 0.49) 1px 2px 6px 0px;
+    /* box-shadow: rgba(88, 7, 243, 0.49) 1px 2px 6px 0px; */
  }
-/*
-nav ul{
-   float: right;
-   margin-right: 90px;
-   
-}
-nav ul li{
-   display: inline-block;
-   margin-top: 20px;
-   line-height: 20px;
-   font-size: 16px;
-   cursor: pointer;
-   margin-right: 20px;
-}
-nav ul li a{
-   color: white;
-   text-decoration: none;
-   padding-top: 50px;
-   padding-left: 0px;
-   padding-right: 15px;
-   padding-bottom: 27px;
-   transition: 0.3s;
-   user-select: none;
-   font-family:sans-serif;
-}
-.cool-link{
-   text-align: center;
-   padding-left: 2px;
-}
-.cool-link::after{
-   content: "";
-   display: block;
-   width: 0;
-   height: 2px;
-   background: white;
-   transition: width 0.3s;
-   margin-left: 4px;
-}
-.cool-link:hover::after{
-   width: 100%;
-   transition: width 0.3s;
-}
-.checkbtn{
-   font-size: 25px;
-   float: right;
-   margin-top: 40px;
-   margin-right: 30px;
-   cursor: pointer;
-   display: none;
-   color: white;
-}
-
-.checkbtn span{
-   width: 25px;
-   height: 3px;
-   background-color: white;
-   position: absolute;
-   transition: 0.4s;
-}
-.checkbtn::before,
-.checkbtn::after{
-   content: ' ';
-   width: 25px;
-   height: 3px;
-   background-color: white;
-   position: absolute;
-   transition: all 0.4s ease-out 0s;
-}
-.checkbtn::before{
-   transform: translateY(-5px);
-}
-.checkbtn::after{
-   transform: translateY(5px);
-}
-#check{
-   display: none;
-}
-.sticky{
-   background: #2F255E;
-   transition: .5s;
-   box-shadow: rgba(88, 7, 243, 0.49) 1px 2px 6px 0px;
-}
-#bbtn.sticky{
-   color: white;
-}
-#bbtn{
-   color:#3246a1;
-}
-.vvv{
-   display: block;
-} */
 @media screen and (max-width:1024px){
     nav .container ul li {
        font-size: 17px;
@@ -347,77 +245,6 @@ nav ul li a{
    
 }
 @media screen and (max-width:768px){
-    /* .checkbtn{
-       display: block;
-   }
-   #bbtn{
-       color: white;
-   }
-   nav ul ul{
-       position: static;
-       visibility: visible;
-       opacity: 1;
-       background: none;
-       margin:  10 auto;
-       float: none;
-       color: red;
-       z-index: 7000;
-   }
-   nav ul ul li{
-       color: red;
-       z-index: 100;
-       opacity: 1;
-   }
-   .sticky{
-       color:white ;
-   }
-   .logo{
-       margin-left: 30px;
-   }
-   nav.sticky #navul{
-       background-color: #2F255E;
-   }
-   nav{
-       background-color: #2F255E;
-       color: white;
-   }
-   #navul{
-       width: 100%;
-       position: fixed;
-       background-color: #2F255E;
-       color: white;
-       margin-top: -8px;
-       transform: scale(0);
-       text-align: center;
-       left: -4.5%;
-       border-radius: 50%;
-       transition: 0.6s;
-   }
-   nav ul li{
-       display: block;
-       margin-bottom: 15px;
-       color: white;
-       font-size: 17px;
-   }
-   nav ul li a{
-       padding-top: 20px;
-       padding-left: 12px;
-       padding-right: 12px;
-       color: white;
-   }
-   #check:checked ~ ul{
-       transform: scale(1);
-       border-radius: 0%;
-   }
-   #check:checked ~ .checkbtn span{
-       display: none;
-   }
-   #check:checked ~ .checkbtn::after{
-       transform: rotate(45deg)
-   }
-   #check:checked ~ .checkbtn::before{
-       transform: rotate(135deg)
-   } */
    .checkbtn{
     display: block;
 }
@@ -432,22 +259,22 @@ nav ul li a{
     margin-left: 30px;
 }
 nav.sticky #navul{
-    background-color: #19022c;
+    background-color: #228bcc;
 }
 nav{
-    background-color: #19022c;
+    background-color: #228bcc;
     color: white;
 }
 #navul{
     width: 100%;
     position: fixed;
-    background-color: #19022c;
+    background-color: #228bcc;
     color: white;
     /* margin-top: -7.5159px; */
     margin-top: 70px;
     transform: scale(0);
     text-align: center;
-    left: -3%;
+    left: -5%;
     border-radius: 50%;
     transition: 0.6s;
     height: 260px;
@@ -484,9 +311,6 @@ nav ul li a{
 }
 
 @media screen and (max-width:481px){
-   /* #navul{
-       left: -9%;
-   } */
    .logo{
     margin-left: 0px;
 }
@@ -508,6 +332,6 @@ a.prev{
 }
 @media screen and (max-width:380px){
     #navul{
-        left: -6%;
+        left: -8%;
     }
 }

@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav id="navbar" style=" background: linear-gradient(90deg, #0E0835 0%, #281E55 42.19%, #56478F 100%);">
+    <nav id="navbar" style=" background: #228bcc;">
         <div class="container">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -79,7 +79,7 @@
                     <div class="modal">
                         <span class="xxx"><i class="fas fa-times"></i></span>
                         <div class="modalContent">
-                            <video loop  style="width: 700px; margin-top: -300px;" src="" class="modalVid"></video>
+                            <video loop controls  style=" margin-top: -300px;" src="" class="modalVid"></video>
                         </div>
                     </div>
                 </div>
@@ -160,10 +160,14 @@
                     modalVid.pause();
                 });
 
-                modal.addEventListener("click", () => {
-                    modal.classList.remove("appear");
-                    modalVid.pause();
-                })
+                // modal.addEventListener("click", () => {
+                //     modal.classList.remove("appear");
+                //     modalVid.pause();
+                // })
+                // modalVid.addEventListener("click", () => {
+                //     modal.classList.remove("appear");
+                //     modalVid.pause();
+                // })
             });
             });
         </script>
